@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="AngularApp.WebService.LoginREST" CodeBehind="LoginREST.svc.cs" %>

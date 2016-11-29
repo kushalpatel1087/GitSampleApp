@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html ng-app="AngularApp">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="jumbotron" style="height:100%">
+        <div class="container" style="height:100%">
+            <div class="col-xs-offset-2 col-xs-8" style="height:100%">
+                <div ng-cloak ng-hide="showmenu" ng-init="showmenu=true">
+                    <md-content class="md-padding">
+                        <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
+                            <md-nav-item md-nav-href="#home" name="HomePage">Home</md-nav-item>
+                            <md-nav-item md-nav-href="#admin" name="Admin">Admin</md-nav-item>
+                            <md-nav-item md-nav-href="#contact" name="Contact Us">Contact Us</md-nav-item>                            
+                        </md-nav-bar>
+                    </md-content>
+                </div>
+                <div ng-view></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="Login/LoginService.js"></script>
+    <script src="Home/HomeService.js"></script>
+    <script src="Scripts/app.js"></script>
+    <script src="Login/LoginController.js"></script>
+    <script src="Home/HomeController.js"></script>
+    <script src="Scripts/angular-aria.js"></script>
+    <script src="Scripts/angular-animate.js"></script>
+    <script src="Scripts/angular-material/angular-material.js"></script>
+    <link href="Content/angular-material.css" rel="stylesheet" />
+
+    
+
+</body>
+</html>
