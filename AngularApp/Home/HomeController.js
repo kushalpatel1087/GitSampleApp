@@ -1,4 +1,4 @@
-﻿'use strict';
+﻿
 
 AngularApp.controller('HomeController', ['$scope', '$http', 'Homefactory', function ($scope, $http, Homefactory) {
     $scope.$parent.showmenu = false;
